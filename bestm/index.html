@@ -49,7 +49,7 @@
     </script>
 
     <!-- Required style of the theme -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/layerslider.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
@@ -68,18 +68,13 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-
-        .carousel-item img {
-            transition: opacity 0.3s ease;
-            transition: scale 0.3s ease;
-            /* Add smooth transition */
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
         .carousel-item:hover img {
             opacity: 0.8;
-            scale: 0.9;
-            filter: contrast(250%);
+            transform: scale(0.9);
+            filter: contrast(200%);
             /* filter: brightness(120%); */
             /* Reduce opacity on hover */
         }
